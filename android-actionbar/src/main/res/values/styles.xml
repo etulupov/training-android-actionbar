@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="Widget.ActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/abc_ab_solid_dark_holo</item>
+        <item name="titleTextStyle">@style/Widget.ActionBar.Title</item>
+        <item name="icon">@drawable/ic_music</item>
+
+    </style>
+
+    <style name="Widget.ActionBar.Transparent">
+        <item name="background">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <style name="Widget.ActionBar.Custom">
+        <item name="background">@color/ab_background</item>
+
+
+        <item name="backgroundSplit">@color/ab_background_split</item>
+
+    </style>
+
+    <style name="Widget.ActionBar.Title" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="Widget.ActionBar.TabView" parent="Widget.AppCompat.ActionBar.TabView">
+        <item name="background">@drawable/ab_tab_indicator</item>
+        <item name="android:background">@drawable/ab_tab_indicator</item>
+
+
+    </style>
+</resources>

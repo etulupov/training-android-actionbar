@@ -1,0 +1,9 @@
+<resources>
+
+    <color name="ab_background">#009bb9</color>
+    <color name="ab_background_split">#9DE7F6</color>
+    <color name="ab_tab_background">#078097</color>
+    <color name="menu_selected">#69DAF0</color>
+
+
+</resources>

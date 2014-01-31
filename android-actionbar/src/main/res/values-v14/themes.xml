@@ -1,0 +1,24 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+
+
+    <style name="AppTheme.Overlay">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+
+    </style>
+
+    <style name="AppTheme.CustomActionBar">
+
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Custom</item>
+        <item name="android:actionBarSplitStyle">@style/Widget.ActionBar.Custom</item>
+
+        <item name="android:actionBarTabStyle">@style/Widget.ActionBar.TabView</item>
+    </style>
+
+</resources>
