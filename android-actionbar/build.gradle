@@ -1,28 +1,27 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:0.8.+'
-    }
-}
 apply plugin: 'android'
 
-repositories {
-    mavenCentral()
+dependencies {
+	compile 'com.android.support:support-v4:19.0.1'
+	compile 'com.android.support:appcompat-v7:19.0.1'
 }
 
+
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19"
+    compileSdkVersion project.compileSdkVersion
+    buildToolsVersion project.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 18
+        versionCode 1
+        versionName '1.0'
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
+    }
+
+    lintOptions {
+        abortOnError true
+        checkAllWarnings true
+        warningsAsErrors true
+        disable 'AllowBackup', 'ContentDescription', 'InvalidPackage', 'SelectableText', 'SpUsage'
     }
 }
 
-dependencies {
-	compile 'com.android.support:support-v4:19.0.0'
-	compile 'com.android.support:appcompat-v7:19.0.0'
-}
