@@ -128,7 +128,7 @@ public abstract class BaseFragment extends ListFragment implements LoaderManager
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
-        if (!data.isClosed()) {
+        if (data != null && !data.isClosed()) {
             adapter.swapCursor(new CursorWrapper(data));
         }
     }
