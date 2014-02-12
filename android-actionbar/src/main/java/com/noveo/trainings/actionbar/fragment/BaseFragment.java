@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.noveo.trainings.actionbar.R;
 import com.noveo.trainings.actionbar.activity.DetailsActivity;
+import com.noveo.trainings.actionbar.activity.SearchResultActivity;
 import com.noveo.trainings.actionbar.util.CursorWrapper;
 import com.noveo.trainings.actionbar.widget.CursorAdapter;
 
@@ -62,7 +63,7 @@ public abstract class BaseFragment extends ListFragment implements LoaderManager
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
-                doSearch(s);
+                startActivity(SearchResultActivity.createIntent(getActivity(), s));
                 return true;
             }
 
