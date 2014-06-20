@@ -1,8 +1,8 @@
 apply plugin: 'android'
 
 dependencies {
-	compile 'com.android.support:support-v4:19.0.1'
-	compile 'com.android.support:appcompat-v7:19.0.1'
+	compile 'com.android.support:support-v4:19.1.0'
+	compile 'com.android.support:appcompat-v7:19.1.0'
 }
 
 
@@ -21,7 +21,7 @@ android {
         abortOnError true
         checkAllWarnings true
         warningsAsErrors true
-        disable 'AllowBackup', 'ContentDescription', 'InvalidPackage', 'SelectableText', 'SpUsage'
+        disable 'AllowBackup', 'RtlEnabled', 'ContentDescription', 'InvalidPackage', 'SelectableText', 'SpUsage'
     }
 }
 
